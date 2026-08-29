@@ -1,0 +1,102 @@
+# Public-domain science fiction from Project Gutenberg, Science Fiction bookshelf.
+# stellar-index downloads these books with `stellar-index build`; texts are not committed.
+
+[[books]]
+gutenberg_id = 35
+title = "The Time Machine"
+author = "H. G. Wells"
+
+[[books]]
+gutenberg_id = 36
+title = "The War of the Worlds"
+author = "H. G. Wells"
+
+[[books]]
+gutenberg_id = 43
+title = "The Strange Case of Dr. Jekyll and Mr. Hyde"
+author = "Robert Louis Stevenson"
+
+[[books]]
+gutenberg_id = 62
+title = "A Princess of Mars"
+author = "Edgar Rice Burroughs"
+
+[[books]]
+gutenberg_id = 64
+title = "The Gods of Mars"
+author = "Edgar Rice Burroughs"
+
+[[books]]
+gutenberg_id = 68
+title = "The Warlord of Mars"
+author = "Edgar Rice Burroughs"
+
+[[books]]
+gutenberg_id = 72
+title = "Thuvia, Maid of Mars"
+author = "Edgar Rice Burroughs"
+
+[[books]]
+gutenberg_id = 83
+title = "From the Earth to the Moon; and, Round the Moon"
+author = "Jules Verne"
+
+[[books]]
+gutenberg_id = 84
+title = "Frankenstein; or, The Modern Prometheus"
+author = "Mary Wollstonecraft Shelley"
+
+[[books]]
+gutenberg_id = 97
+title = "Flatland: A Romance of Many Dimensions"
+author = "Edwin Abbott Abbott"
+
+[[books]]
+gutenberg_id = 139
+title = "The Lost World"
+author = "Arthur Conan Doyle"
+
+[[books]]
+gutenberg_id = 159
+title = "The Island of Doctor Moreau"
+author = "H. G. Wells"
+
+[[books]]
+gutenberg_id = 164
+title = "Twenty Thousand Leagues under the Sea"
+author = "Jules Verne"
+
+[[books]]
+gutenberg_id = 5230
+title = "The Invisible Man: A Grotesque Romance"
+author = "H. G. Wells"
+
+[[books]]
+gutenberg_id = 10002
+title = "The House on the Borderland"
+author = "William Hope Hodgson"
+
+[[books]]
+gutenberg_id = 18857
+title = "A Journey to the Centre of the Earth"
+author = "Jules Verne"
+
+[[books]]
+gutenberg_id = 19476
+title = "A Honeymoon in Space"
+author = "George Chetwynd Griffith"
+
+[[books]]
+gutenberg_id = 18151
+title = "Time Crime"
+author = "H. Beam Piper"
+
+[[books]]
+gutenberg_id = 20121
+title = "Lone Star Planet"
+author = "John J. McGuire"
+
+[[books]]
+gutenberg_id = 50133
+title = "The Dunwich Horror"
+author = "H. P. Lovecraft"

@@ -1,0 +1,18 @@
+Title: The Last Observatory
+Author: A. Synthetic
+
+---
+# CHAPTER 1
+The last observatory floated at the edge of the silent belt, and Commander Voss had kept its single mirror polished for nineteen years. The mirror was made of lunar glass and it caught the light of a star that had died before the observatory was built. Voss believed that dead light still carried instructions. Doctor Ilyana Rook arrived on the supply shuttle and immediately declared the mirror calibration to be a folk ritual. She had a degree in spectral archaeology and a voice like a tuning fork.
+
+Voss showed her the observation log. Every seventh entry was written in red ink, not because the sensor failed but because the star flared exactly at that cadence. The flare had no physical explanation. Rook called it a coincidence. On the third night, the star flared while the two of them were arguing in the glass gallery, and every red entry in the log began to glow. Rook admitted that the observatory might be less primitive than she had assumed.
+
+# CHAPTER 2
+The flare left a residue on the mirror, a thin film shaped like a coastline. Rook mapped it with a laser and found that the coastline matched a river delta on a planet that no telescope had ever resolved. Voss remembered a nursery rhyme about a river that ran backward. The rhyme said that the river carried the names of everyone who had ever watched the sky.
+
+The supply shuttle was not due for four months. Rook spent the first month teaching the observatory computer to read the film. The computer reported that the film was not dust. It was a compressed alphabet with forty thousand symbols. Voss wrote the first decoded sentence on the wall: "The observer changes the observed, but the observed has been waiting."
+
+# CHAPTER 3
+Rook and Voss disagreed about what to do next. Rook wanted to broadcast the sentence to Earth immediately. Voss wanted to wait until they understood the second sentence, because the second sentence was longer and it appeared only when the mirror was cold. The computer decoded it during a power failure. It read: "Do not interrupt the long exposure." Earth was not the only listener. Something on the night side of the moon repeated their broadcasts with a twelve-second delay.
+
+The observatory's old antenna was rated for seventy thousand kilometers, but the delayed signal was stronger than the original. Voss opened the maintenance hatch and found a second antenna inside the first one, folded like a wing. It had been there since the observatory was built.

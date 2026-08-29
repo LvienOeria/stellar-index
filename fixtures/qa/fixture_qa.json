@@ -1,0 +1,92 @@
+[
+  {
+    "id": "lo-001",
+    "book_id": "the_last_observatory",
+    "type": "single-chapter",
+    "question": "Who kept the observatory mirror polished for nineteen years?",
+    "answers": ["Commander Voss", "Voss"],
+    "evidence": ["Commander Voss had kept its single mirror polished for nineteen years"],
+    "evidence_chapter": 1
+  },
+  {
+    "id": "lo-002",
+    "book_id": "the_last_observatory",
+    "type": "single-chapter",
+    "question": "What degree does Doctor Ilyana Rook have?",
+    "answers": ["spectral archaeology"],
+    "evidence": ["degree in spectral archaeology"],
+    "evidence_chapter": 1
+  },
+  {
+    "id": "lo-003",
+    "book_id": "the_last_observatory",
+    "type": "cross-chapter",
+    "question": "What did the observatory computer say the film on the mirror actually was?",
+    "answers": ["compressed alphabet", "compressed alphabet with forty thousand symbols"],
+    "evidence": ["compressed alphabet with forty thousand symbols"],
+    "evidence_chapter": 2
+  },
+  {
+    "id": "lo-004",
+    "book_id": "the_last_observatory",
+    "type": "cross-chapter",
+    "question": "When was the second sentence decoded, and what did it say?",
+    "answers": ["during a power failure", "do not interrupt the long exposure"],
+    "evidence": ["Do not interrupt the long exposure"],
+    "evidence_chapter": 3
+  },
+  {
+    "id": "lo-005",
+    "book_id": "the_last_observatory",
+    "type": "thematic",
+    "question": "What was the first decoded sentence Voss wrote on the wall?",
+    "answers": ["The observer changes the observed, but the observed has been waiting."],
+    "evidence": ["The observer changes the observed, but the observed has been waiting."],
+    "evidence_chapter": 2
+  },
+  {
+    "id": "ma-001",
+    "book_id": "a_mirror_for_argon",
+    "type": "single-chapter",
+    "question": "Who built the first mirror in the city of Argon?",
+    "answers": ["Neri", "glassmaker Neri"],
+    "evidence": ["glassmaker Neri built one for the mayor's daughter"],
+    "evidence_chapter": 1
+  },
+  {
+    "id": "ma-002",
+    "book_id": "a_mirror_for_argon",
+    "type": "single-chapter",
+    "question": "Why was the first mirror not flat?",
+    "answers": ["bent every reflection two degrees toward kindness"],
+    "evidence": ["It bent every reflection two degrees toward kindness"],
+    "evidence_chapter": 1
+  },
+  {
+    "id": "ma-003",
+    "book_id": "a_mirror_for_argon",
+    "type": "cross-chapter",
+    "question": "Why did the ferryman refuse to carry the cracked glass across the river?",
+    "answers": ["broken mirror is a map with too many destinations", "map with too many destinations"],
+    "evidence": ["broken mirror is a map with too many destinations"],
+    "evidence_chapter": 2
+  },
+  {
+    "id": "ma-004",
+    "book_id": "a_mirror_for_argon",
+    "type": "cross-chapter",
+    "question": "When did the door made of salt-grass open?",
+    "answers": ["when the river ran backward", "river ran backward"],
+    "evidence": ["door opened only when the river ran backward"],
+    "evidence_chapter": 3
+  },
+  {
+    "id": "ma-005",
+    "book_id": "a_mirror_for_argon",
+    "type": "thematic",
+    "question": "According to Neri, what must the last mirror be poured from?",
+    "answers": ["light of the first crack"],
+    "evidence": ["last mirror must be poured from the light of the first crack"],
+    "evidence_chapter": 3
+  }
+]
