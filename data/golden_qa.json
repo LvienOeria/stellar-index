@@ -1148,5 +1148,371 @@
     ],
     "evidence_chapter": 1,
     "id": "97-083"
+  },
+  {
+    "book_id": "10002",
+    "type": "single-chapter",
+    "question": "What did Tonnison find while digging among the rubble near the chasm?",
+    "answers": [
+      "a book",
+      "a manuscript"
+    ],
+    "evidence": [
+      "he was brushing the dirt from something that looked like a book, much crumpled and dilapidated"
+    ],
+    "evidence_chapter": 1,
+    "id": "10002-084"
+  },
+  {
+    "book_id": "10002",
+    "type": "single-chapter",
+    "question": "What did the narrator see peering in over the window ledge?",
+    "answers": [
+      "a swine-like creature",
+      "a pig-like thing"
+    ],
+    "evidence": [
+      "I saw something peering in over the window ledge the eyes and ears alone showing."
+    ],
+    "evidence_chapter": 1,
+    "id": "10002-085"
+  },
+  {
+    "book_id": "10002",
+    "type": "cross-chapter",
+    "question": "In both the vision of the arena and the encounter at the house, what animal does the monstrous creature resemble?",
+    "answers": [
+      "a pig/swine"
+    ],
+    "evidence": [
+      "It was the face of a swine.",
+      "The nose was prolonged into a snout"
+    ],
+    "evidence_chapter": 1,
+    "id": "10002-086"
+  },
+  {
+    "book_id": "10002",
+    "type": "cross-chapter",
+    "question": "What did the narrator realize about the great building in the arena compared to his own house?",
+    "answers": [
+      "It was identical except for color and size."
+    ],
+    "evidence": [
+      "the body of the building is in the form of a circle",
+      "in no particular, save in color and its enormous size, did the lonely structure vary from this house"
+    ],
+    "evidence_chapter": 1,
+    "id": "10002-087"
+  },
+  {
+    "book_id": "10002",
+    "type": "thematic",
+    "question": "According to the narrator, why does he keep a diary?",
+    "answers": [
+      "to record strange happenings and ease his mind"
+    ],
+    "evidence": [
+      "I am anxious to make some record of the strange things that I have heard and seen"
+    ],
+    "evidence_chapter": 1,
+    "id": "10002-088"
+  },
+  {
+    "book_id": "139",
+    "type": "single-chapter",
+    "question": "According to Gladys, what kind of man would she love?",
+    "answers": [
+      "a man of great deeds and strange experiences",
+      "a man who could look Death in the face and have no fear of him"
+    ],
+    "evidence": [
+      "a man of great deeds and strange experiences"
+    ],
+    "evidence_chapter": 3,
+    "id": "139-089"
+  },
+  {
+    "book_id": "139",
+    "type": "single-chapter",
+    "question": "What did McArdle suggest Malone could do to Professor Challenger?",
+    "answers": [
+      "show him up as a liar",
+      "expose a fraud and make him ridiculous"
+    ],
+    "evidence": [
+      "You could show him up as the liar that he is!"
+    ],
+    "evidence_chapter": 4,
+    "id": "139-090"
+  },
+  {
+    "book_id": "139",
+    "type": "thematic",
+    "question": "What view of heroism and love does the novel's opening present?",
+    "answers": [
+      "heroic deeds are all around and men should do them to earn women's love",
+      "women reserve their love as a reward for men who perform great deeds"
+    ],
+    "evidence": [
+      "There are heroisms all round us waiting to be done.",
+      "It's for men to do them, and for women to reserve their love as a reward for such men."
+    ],
+    "evidence_chapter": 3,
+    "id": "139-091"
+  },
+  {
+    "book_id": "159",
+    "type": "single-chapter",
+    "question": "How many men were in the dingey after the Lady Vain was lost?",
+    "answers": [
+      "three",
+      "3",
+      "Three men"
+    ],
+    "evidence": [
+      "I must state that there never were _four_ men in the dingey,—the number was three."
+    ],
+    "evidence_chapter": 1,
+    "id": "159-092"
+  },
+  {
+    "book_id": "159",
+    "type": "single-chapter",
+    "question": "What was the name of the schooner that rescued Prendick?",
+    "answers": [
+      "Ipecacuanha"
+    ],
+    "evidence": [
+      "calls the thing the _Ipecacuanha_, of all silly, infernal names."
+    ],
+    "evidence_chapter": 1,
+    "id": "159-093"
+  },
+  {
+    "book_id": "159",
+    "type": "cross-chapter",
+    "question": "What two animal-like features did Prendick observe in Montgomery's attendant?",
+    "answers": [
+      "pointed ears covered with fur and eyes that shone with a pale-green light",
+      "pointed furry ears and luminous pale-green eyes"
+    ],
+    "evidence": [
+      "I saw that the eyes that glanced at me shone with a pale-green light.",
+      "The man had pointed ears, covered with a fine brown fur!"
+    ],
+    "evidence_chapter": 1,
+    "id": "159-094"
+  },
+  {
+    "book_id": "159",
+    "type": "cross-chapter",
+    "question": "Who was the white-haired man living on the island?",
+    "answers": [
+      "Doctor Moreau",
+      "Moreau"
+    ],
+    "evidence": [
+      "The white-haired man I found was still regarding me steadfastly, but with an expression, as I now fancied, of some perplexity.",
+      "\"Moreau!\" I heard him call; and for the moment I do not think I noticed."
+    ],
+    "evidence_chapter": 1,
+    "id": "159-095"
+  },
+  {
+    "book_id": "159",
+    "type": "thematic",
+    "question": "What broader theme is introduced by the description of Doctor Moreau's experiments?",
+    "answers": [
+      "the cruelty and moral dangers of unrestrained scientific research",
+      "scientific cruelty/vivisection",
+      "science without moral restraint leads to cruelty"
+    ],
+    "evidence": [
+      "some of his experiments, by the journalist's account, were wantonly cruel."
+    ],
+    "evidence_chapter": 1,
+    "id": "159-096"
+  },
+  {
+    "type": "single-chapter",
+    "question": "Where did Tonnison find the manuscript?",
+    "answers": [
+      "buried in debris beside the ruined wall",
+      "among rubble near the chasm"
+    ],
+    "evidence": [
+      "he was brushing the dirt from something that looked like a book"
+    ],
+    "evidence_chapter": 1,
+    "book_id": "10002",
+    "id": "10002-097"
+  },
+  {
+    "type": "single-chapter",
+    "question": "What did the narrator initially exclaim the creature peering over the window ledge was?",
+    "answers": [
+      "A pig"
+    ],
+    "evidence": [
+      "'A pig, by Jove!' I said, and rose to my feet."
+    ],
+    "evidence_chapter": 1,
+    "book_id": "10002",
+    "id": "10002-098"
+  },
+  {
+    "type": "cross-chapter",
+    "question": "What facial feature did the swine-thing in the arena and the creature in the pit share?",
+    "answers": [
+      "a swine-like face",
+      "a pig-like snout and face"
+    ],
+    "evidence": [
+      "It was the face of a swine.",
+      "gave it such an extraordinarily swinelike appearance."
+    ],
+    "evidence_chapter": 1,
+    "book_id": "10002",
+    "id": "10002-099"
+  },
+  {
+    "type": "cross-chapter",
+    "question": "What happened to the narrator during his vision of the Plain?",
+    "answers": [
+      "he was absent in spirit for nearly a day and a night",
+      "his spirit left his body and returned later"
+    ],
+    "evidence": [
+      "I had, indeed, been absent--at least in spirit--for nearly a day and a night.",
+      "I became conscious that I was no longer in the chair."
+    ],
+    "evidence_chapter": 1,
+    "book_id": "10002",
+    "id": "10002-100"
+  },
+  {
+    "type": "thematic",
+    "question": "What was the green jade building in the arena revealed to be?",
+    "answers": [
+      "an enormous replica of the narrator's house"
+    ],
+    "evidence": [
+      "in no particular, save in color and its enormous size, did the lonely structure vary from this house in which I live."
+    ],
+    "evidence_chapter": 1,
+    "book_id": "10002",
+    "id": "10002-101"
+  },
+  {
+    "book_id": "139",
+    "type": "single-chapter",
+    "question": "What does Gladys say she is really in love with?",
+    "answers": [
+      "an ideal",
+      "an ideal man"
+    ],
+    "evidence": [
+      "only an ideal. I've never met the kind of man I mean."
+    ],
+    "evidence_chapter": 3,
+    "id": "139-102"
+  },
+  {
+    "book_id": "139",
+    "type": "single-chapter",
+    "question": "When Mrs. Challenger scolds her husband, what does he do to her?",
+    "answers": [
+      "puts her on a high marble pedestal",
+      "sits her on a pedestal in the hall"
+    ],
+    "evidence": [
+      "he stooped, picked her up, and placed her sitting upon a high pedestal of black marble"
+    ],
+    "evidence_chapter": 6,
+    "id": "139-103"
+  },
+  {
+    "book_id": "164",
+    "type": "single-chapter",
+    "question": "What shape was the hole found in the _Scotia_'s hull after the accident?",
+    "answers": [
+      "a regular rent, in the form of an isosceles triangle",
+      "an isosceles triangle"
+    ],
+    "evidence": [
+      "a regular rent, in the form of an isosceles triangle"
+    ],
+    "evidence_chapter": 2,
+    "id": "164-104"
+  },
+  {
+    "book_id": "164",
+    "type": "single-chapter",
+    "question": "What explanation did Professor Aronnax give for the monster in his article?",
+    "answers": [
+      "a gigantic narwhal",
+      "a sea-unicorn of colossal dimensions"
+    ],
+    "evidence": [
+      "I should be disposed to admit the existence of a gigantic narwhal."
+    ],
+    "evidence_chapter": 3,
+    "id": "164-105"
+  },
+  {
+    "book_id": "164",
+    "type": "thematic",
+    "question": "What does the text suggest about the limits of human knowledge of the ocean and its creatures?",
+    "answers": [
+      "the ocean depths are unknown and may hide unclassified creatures",
+      "unknown depths may contain beings beyond scientific classification"
+    ],
+    "evidence": [
+      "The great depths of the ocean are entirely unknown to us. Soundings cannot reach them."
+    ],
+    "evidence_chapter": 3,
+    "id": "164-106"
+  },
+  {
+    "type": "single-chapter",
+    "question": "Who was the author of the Runic manuscript that Professor Hardwigg discovered?",
+    "answers": [
+      "Arne Saknussemm"
+    ],
+    "evidence": [
+      "that is not only an Icelandic name, but of a learned professor of the sixteenth century, a celebrated alchemist"
+    ],
+    "evidence_chapter": 3,
+    "book_id": "18857",
+    "id": "18857-107"
+  },
+  {
+    "type": "single-chapter",
+    "question": "What was the name of the mountain in Iceland that contained the entrance to the centre of the earth?",
+    "answers": [
+      "Sneffels",
+      "Mount Sneffels"
+    ],
+    "evidence": [
+      "Well, that's Sneffels."
+    ],
+    "evidence_chapter": 5,
+    "book_id": "18857",
+    "id": "18857-108"
+  },
+  {
+    "type": "thematic",
+    "question": "What does the novel suggest about the pursuit of scientific discovery?",
+    "answers": [
+      "It is an all-consuming passion that overrides comfort and safety",
+      "Scientific discovery is worth any sacrifice"
+    ],
+    "evidence": [
+      "His imagination is a perfect volcano, and to make discoveries in the interests of geology he would sacrifice his life"
+    ],
+    "evidence_chapter": 4,
+    "book_id": "18857",
+    "id": "18857-109"
   }
 ]

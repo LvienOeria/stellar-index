@@ -1,9 +1,9 @@
 from __future__ import annotations
 
 from pathlib import Path
+from typing import Any
 
 from .config import Settings
-
 
 _DENSE_CACHE: dict[tuple[str, str], "DenseIndex"] = {}
 
@@ -28,9 +28,8 @@ class DenseIndex:
             from sentence_transformers import SentenceTransformer  # type: ignore
 
             db = lancedb.connect(str(settings.index_dir / "lancedb"))
-            table_name = "chunks"
-            if table_name in db.table_names():
-                self._table = db.open_table(table_name)
+            if "chunks" in db.table_names():
+                self._table = db.open_table("chunks")
             else:
                 raise RuntimeError("dense index not built; run `stellar-index build --dense` first")
             self._encoder = SentenceTransformer(settings.embedding_model)
@@ -38,11 +37,14 @@ class DenseIndex:
         except Exception as exc:  # noqa: BLE001
             raise RuntimeError(f"dense index unavailable: {exc}") from exc
 
-    def search(self, query: str, top_k: int = 100) -> list[tuple[str, float]]:
+    def search(self, query: str, top_k: int = 100, book_id: str | None = None) -> list[tuple[str, float]]:
         if self._table is None or self._encoder is None:
             return []
         vec = self._encoder.encode([query], normalize_embeddings=True).tolist()[0]
-        rows = self._table.search(vec).limit(top_k).to_list()
+        builder = self._table.search(vec)
+        if book_id:
+            builder = builder.where(f"book_id = {book_id!r}", prefilter=True)
+        rows = builder.limit(top_k).to_list()
         return [(str(row["chunk_id"]), float(row.get("_distance") or 0.0)) for row in rows]
 
 
@@ -51,7 +53,7 @@ def build_dense_index(store: Any, settings: Settings) -> int:
     import lancedb  # type: ignore
     from sentence_transformers import SentenceTransformer  # type: ignore
 
-    rows = store.conn.execute("SELECT chunk_id, text FROM chunks").fetchall()
+    rows = store.conn.execute("SELECT chunk_id, book_id, text FROM chunks").fetchall()
     if not rows:
         raise RuntimeError("no chunks in store; build the BM25 index first")
     encoder = SentenceTransformer(settings.embedding_model)
@@ -59,7 +61,7 @@ def build_dense_index(store: Any, settings: Settings) -> int:
     vectors = encoder.encode(texts, batch_size=settings.dense_batch_size, normalize_embeddings=True)
     db = lancedb.connect(str(settings.index_dir / "lancedb"))
     data = [
-        {"chunk_id": row["chunk_id"], "text": row["text"], "vector": vectors[i].tolist()}
+        {"chunk_id": row["chunk_id"], "book_id": row["book_id"], "text": row["text"], "vector": vectors[i].tolist()}
         for i, row in enumerate(rows)
     ]
     db.create_table("chunks", data=data, mode="overwrite")

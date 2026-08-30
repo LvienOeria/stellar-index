@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import math
+import os
 import re
 import sqlite3
 from dataclasses import dataclass
@@ -242,12 +243,11 @@ class Reranker:
     def rerank(self, query: str, results: list[SearchResult]) -> list[SearchResult]:
         if self._model is None or not results:
             return results
-        pairs = [(query, r.parent_text or r.text) for r in results]
-        scores = self._model.predict(
-            pairs,
-            batch_size=min(self.settings.rerank_batch_size, len(pairs) or 1),
-            show_progress_bar=False,
-        )
+        max_chars = 1_800  # ~450 tokens; keeps long-novel reranking memory-bounded
+        pairs = [(query, (r.parent_text or r.text)[:max_chars]) for r in results]
+        batch_size = 8 if self.mode == "full" else 16
+        batch_size = min(batch_size, len(pairs) or 1)
+        scores = self._model.predict(pairs, batch_size=batch_size, show_progress_bar=False)
         for result, score in zip(results, scores, strict=True):
             result.score = float(score)
             result.rank_source = f"cross-encoder:{self.mode}"
@@ -294,6 +294,8 @@ def hybrid_search(
     book_id: str | None = None,
 ) -> list[SearchResult]:
     bm25_results = bm25_search(store, query, limit=100, book_id=book_id)
+    if os.getenv("STELLAR_DEBUG"):
+        print("debug: bm25", len(bm25_results), flush=True)
     reranker_obj = Reranker(settings, mode=rerank) if rerank in {"full", "fast"} else None
     if dense:
         # Dense arm requires the optional retrieval extra. It is deliberately
@@ -302,7 +304,11 @@ def hybrid_search(
             from .dense import DenseIndex
 
             dense_index = DenseIndex(settings)
+            if os.getenv("STELLAR_DEBUG"):
+                print("debug: dense loaded", flush=True)
             ranked = dense_index.search(query, top_k=100)
+            if os.getenv("STELLAR_DEBUG"):
+                print("debug: dense ranked", len(ranked), flush=True)
             results = rrf_fuse(bm25_results, ranked, k=settings.rrf_k, limit=settings.top_k_hybrid)
         except Exception:
             results = bm25_results[: settings.top_k_hybrid]
@@ -311,7 +317,11 @@ def hybrid_search(
     if book_id:
         results = [r for r in results if r.book_id == book_id]
     if reranker_obj is not None:
+        if os.getenv("STELLAR_DEBUG"):
+            print("debug: before rerank", len(results), flush=True)
         results = reranker_obj.rerank(query, results)
+        if os.getenv("STELLAR_DEBUG"):
+            print("debug: after rerank", flush=True)
     elif rerank == "llm" and llm_client is not None:
         results = llm_rerank(query, results, llm_client)
     return results
