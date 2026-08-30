@@ -120,18 +120,30 @@ def _fts_query(query: str) -> str:
     return " OR ".join(f'"{token}"' for token in tokens[:12])
 
 
-def bm25_search(store: IndexStore, query: str, limit: int = 50) -> list[SearchResult]:
+def bm25_search(store: IndexStore, query: str, limit: int = 50, book_id: str | None = None) -> list[SearchResult]:
     fts = _fts_query(query)
-    rows = store.conn.execute(
-        """
-        SELECT c.*, bm25(chunks_fts) AS score
-        FROM chunks_fts JOIN chunks c ON c.chunk_id = chunks_fts.chunk_id
-        WHERE chunks_fts MATCH ?
-        ORDER BY bm25(chunks_fts)
-        LIMIT ?
-        """,
-        (fts, limit),
-    ).fetchall()
+    if book_id:
+        rows = store.conn.execute(
+            """
+            SELECT c.*, bm25(chunks_fts) AS score
+            FROM chunks_fts JOIN chunks c ON c.chunk_id = chunks_fts.chunk_id
+            WHERE chunks_fts MATCH ? AND c.book_id = ?
+            ORDER BY bm25(chunks_fts)
+            LIMIT ?
+            """,
+            (fts, book_id, limit),
+        ).fetchall()
+    else:
+        rows = store.conn.execute(
+            """
+            SELECT c.*, bm25(chunks_fts) AS score
+            FROM chunks_fts JOIN chunks c ON c.chunk_id = chunks_fts.chunk_id
+            WHERE chunks_fts MATCH ?
+            ORDER BY bm25(chunks_fts)
+            LIMIT ?
+            """,
+            (fts, limit),
+        ).fetchall()
     results = [_row_to_result(row, "bm25", raw_score=True) for row in rows]
     return _normalize_scores(results)
 
@@ -228,7 +240,7 @@ class Reranker:
                 self._model = None
 
     def rerank(self, query: str, results: list[SearchResult]) -> list[SearchResult]:
-        if self._model is None:
+        if self._model is None or not results:
             return results
         pairs = [(query, r.parent_text or r.text) for r in results]
         scores = self._model.predict(
@@ -279,8 +291,10 @@ def hybrid_search(
     dense: bool = False,
     rerank: str = "none",
     llm_client: Any = None,
+    book_id: str | None = None,
 ) -> list[SearchResult]:
-    bm25_results = bm25_search(store, query, limit=100)
+    bm25_results = bm25_search(store, query, limit=100, book_id=book_id)
+    reranker_obj = Reranker(settings, mode=rerank) if rerank in {"full", "fast"} else None
     if dense:
         # Dense arm requires the optional retrieval extra. It is deliberately
         # best-effort: failure falls back to BM25 and records the fallback.
@@ -294,8 +308,10 @@ def hybrid_search(
             results = bm25_results[: settings.top_k_hybrid]
     else:
         results = bm25_results[: settings.top_k_hybrid]
-    if rerank in {"full", "fast"}:
-        results = Reranker(settings, mode=rerank).rerank(query, results)
+    if book_id:
+        results = [r for r in results if r.book_id == book_id]
+    if reranker_obj is not None:
+        results = reranker_obj.rerank(query, results)
     elif rerank == "llm" and llm_client is not None:
         results = llm_rerank(query, results, llm_client)
     return results

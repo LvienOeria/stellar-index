@@ -38,7 +38,16 @@ class EvalResult:
 
 def load_qa(path: Path | None = None) -> list[QAItem]:
     raw = json.loads((path or FIXTURE_QA_PATH).read_text(encoding="utf-8"))
-    return [QAItem(**item) for item in raw]
+    items = []
+    for idx, item in enumerate(raw):
+        item.setdefault("id", f"{item.get('book_id', 'unknown')}-{idx:03d}")
+        item.setdefault("book_id", "unknown")
+        item.setdefault("type", "single-chapter")
+        item.setdefault("answers", [])
+        item.setdefault("evidence", [])
+        item.setdefault("evidence_chapter", 1)
+        items.append(QAItem(**item))
+    return items
 
 
 def _normalize(text: str) -> str:
@@ -48,12 +57,34 @@ def _normalize(text: str) -> str:
 
 
 def find_evidence_chunks(store: IndexStore, evidence: str, book_id: str | None = None) -> list[str]:
-    like = f"%{evidence}%"
+    """Locate gold chunks with normalized text matching.
+
+    Project Gutenberg texts contain italics markup (`_word_`) and curly quotes;
+    normalization removes that noise before matching. Parent chunks are matched
+    first because evidence quotes often cross child chunk boundaries.
+    """
+    needle = _normalize(evidence)
+    if not needle:
+        return []
     rows = store.conn.execute(
-        "SELECT chunk_id FROM chunks WHERE text LIKE ?" + (" AND book_id=?" if book_id else ""),
-        (like, book_id) if book_id else (like,),
+        "SELECT chunk_id, parent_id, text, parent_text FROM chunks"
+        + (" WHERE book_id=?" if book_id else ""),
+        (book_id,) if book_id else (),
     ).fetchall()
-    return [row["chunk_id"] for row in rows]
+    hits: set[str] = set()
+    parent_hits: set[str] = set()
+    for row in rows:
+        if needle in _normalize(row["text"]):
+            hits.add(row["chunk_id"])
+        if needle in _normalize(row["parent_text"]):
+            parent_hits.add(row["parent_id"])
+    if parent_hits:
+        first_by_parent: dict[str, str] = {}
+        for row in rows:
+            if row["parent_id"] in parent_hits:
+                first_by_parent.setdefault(row["parent_id"], row["chunk_id"])
+        hits = set(first_by_parent.values())
+    return sorted(hits)[:1]
 
 
 def retrieval_metrics(
@@ -71,7 +102,7 @@ def retrieval_metrics(
             gold_ids.update(find_evidence_chunks(store, evidence, item.book_id))
         if not gold_ids:
             continue
-        results = hybrid_search(item.question, store, settings, dense=dense, rerank=rerank)
+        results = hybrid_search(item.question, store, settings, dense=dense, rerank=rerank, book_id=item.book_id)
         ranked_ids = [r.chunk_id for r in results]
         hit1 = 1.0 if ranked_ids and ranked_ids[0] in gold_ids else 0.0
         recall5 = len(set(ranked_ids[:5]) & gold_ids) / len(gold_ids)

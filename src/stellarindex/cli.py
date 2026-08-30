@@ -9,7 +9,7 @@ from rich.console import Console
 from rich.table import Table
 
 from .config import Settings
-from .corpus import download_gutenberg, load_fixture_books, load_gutenberg_book
+from .corpus import Book, download_gutenberg, load_fixture_books, load_gutenberg_book
 from .dense import build_dense_index
 from .evals import aggregate_results, load_qa, retrieval_metrics, run_eval
 from .qa import QABot
@@ -152,6 +152,10 @@ def eval_cmd(
         store = IndexStore(settings.index_dir / "gutenberg.db")
         qa = load_qa(Path("data/golden_qa.json"))
         books = []
+        for row in store.conn.execute("SELECT book_id, title, author FROM books").fetchall():
+            raw = settings.raw_dir / f"pg{row['book_id']}.txt"
+            if raw.exists():
+                books.append(load_gutenberg_book(raw, row["book_id"], row["title"], row["author"]))
     retrieval = retrieval_metrics(store, qa, settings, dense=dense, rerank=rerank)
     console.print_json(json.dumps({"retrieval": retrieval}))
     if retrieval_only:

@@ -143,7 +143,11 @@ class QABot:
     def ask_longctx(self, question: str, book: Book) -> Answer:
         started = time.time()
         prompt = _long_prompt(question, book)
-        return self._run_json(prompt, question, "long-context", started)
+        answer = self._run_json(prompt, question, "long-context", started)
+        for citation in answer.citations:
+            if not citation.book_id:
+                citation.book_id = book.book_id
+        return answer
 
     def ask_self_route(self, question: str, book: Book, *, dense: bool = False, rerank: str = "full") -> Answer:
         started = time.time()

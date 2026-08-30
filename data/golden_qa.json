@@ -1,0 +1,1152 @@
+[
+  {
+    "book_id": "139",
+    "type": "single-chapter",
+    "question": "What, according to Gladys, is the mark of the kind of man she means?",
+    "answers": [
+      "He makes his own chances."
+    ],
+    "evidence": [
+      "It is the mark of the kind of man I mean that he makes his own chances."
+    ],
+    "evidence_chapter": 3,
+    "id": "139-000"
+  },
+  {
+    "book_id": "139",
+    "type": "single-chapter",
+    "question": "How did Mrs. Challenger describe her husband to Malone before the interview?",
+    "answers": [
+      "He is a perfectly impossible person."
+    ],
+    "evidence": [
+      "I must tell you that he is a perfectly impossible person--absolutely impossible."
+    ],
+    "evidence_chapter": 5,
+    "id": "139-001"
+  },
+  {
+    "book_id": "159",
+    "type": "single-chapter",
+    "question": "How many men were in the dingey with Prendick?",
+    "answers": [
+      "Three"
+    ],
+    "evidence": [
+      "there never were _four_ men in the dingey,—the number was three."
+    ],
+    "evidence_chapter": 1,
+    "id": "159-002"
+  },
+  {
+    "book_id": "159",
+    "type": "single-chapter",
+    "question": "What animal was confined in the little iron cage by the mizzen?",
+    "answers": [
+      "A puma"
+    ],
+    "evidence": [
+      "by the mizzen a huge puma was cramped in a little iron cage"
+    ],
+    "evidence_chapter": 1,
+    "id": "159-003"
+  },
+  {
+    "book_id": "159",
+    "type": "cross-chapter",
+    "question": "In what type of boat did Prendick drift, and what ship picked him up?",
+    "answers": [
+      "A dingey; the Ipecacuanha"
+    ],
+    "evidence": [
+      "the four men who were in the dingey",
+      "calls the thing the _Ipecacuanha_"
+    ],
+    "evidence_chapter": 1,
+    "id": "159-004"
+  },
+  {
+    "book_id": "159",
+    "type": "cross-chapter",
+    "question": "What is the name of the grey-haired man on the island, and what does he call the station?",
+    "answers": [
+      "Doctor Moreau; a biological station"
+    ],
+    "evidence": [
+      "“Moreau!” I heard him call",
+      "This is a biological station—of a sort."
+    ],
+    "evidence_chapter": 1,
+    "id": "159-005"
+  },
+  {
+    "book_id": "159",
+    "type": "thematic",
+    "question": "What do the puma's cries and the deformed men suggest about Moreau's experiments?",
+    "answers": [
+      "Painful vivisection to create human-like beast men"
+    ],
+    "evidence": [
+      "a notorious vivisector, and these crippled and distorted men",
+      "I heard the puma growling through the wall"
+    ],
+    "evidence_chapter": 1,
+    "id": "159-006"
+  },
+  {
+    "book_id": "164",
+    "type": "single-chapter",
+    "question": "What ship was struck and damaged on 13 April 1867, according to chapter 1?",
+    "answers": [
+      "the Scotia"
+    ],
+    "evidence": [
+      "The 13th of April, 1867, the sea being beautiful, the breeze favourable, the _Scotia_, of the Cunard Company’s line"
+    ],
+    "evidence_chapter": 2,
+    "id": "164-007"
+  },
+  {
+    "book_id": "164",
+    "type": "single-chapter",
+    "question": "In chapter 4, what role or occupation is Ned Land said to hold on board the Abraham Lincoln?",
+    "answers": [
+      "harpooner",
+      "prince of harpooners"
+    ],
+    "evidence": [
+      "she had on board Ned Land, the prince of harpooners."
+    ],
+    "evidence_chapter": 5,
+    "id": "164-008"
+  },
+  {
+    "book_id": "164",
+    "type": "thematic",
+    "question": "What theme is emphasized by the worldwide reaction to the reported sea monster?",
+    "answers": [
+      "human fascination with the marvellous/unknown",
+      "excitement and credulity surrounding mysterious phenomena"
+    ],
+    "evidence": [
+      "the excitement produced in the entire world by this supernatural apparition"
+    ],
+    "evidence_chapter": 2,
+    "id": "164-009"
+  },
+  {
+    "book_id": "18151",
+    "type": "single-chapter",
+    "question": "What language did the newly purchased slaves speak?",
+    "answers": [
+      "Kharanda",
+      "the Kharanda dialect"
+    ],
+    "evidence": [
+      "That's Kharanda; it's a dialect spoken by a people in the Ganges Valley, in India"
+    ],
+    "evidence_chapter": 1,
+    "id": "18151-010"
+  },
+  {
+    "book_id": "18151",
+    "type": "single-chapter",
+    "question": "Who was the Chief of Paratime Police?",
+    "answers": [
+      "Tortha Karf"
+    ],
+    "evidence": [
+      "His name was Tortha Karf, and he was Chief of Paratime Police, and Verkan Vall's superior."
+    ],
+    "evidence_chapter": 1,
+    "id": "18151-011"
+  },
+  {
+    "book_id": "18151",
+    "type": "cross-chapter",
+    "question": "Who was the field agent who discovered the slaves, and what job was he performing when he discovered them?",
+    "answers": [
+      "Skordran Kirv, guard captain",
+      "Agent Skordran Kirv, on detached duty as guard captain"
+    ],
+    "evidence": [
+      "I'm still a field agent of the Paratime Police",
+      "One of our field agents on detached duty as guard captain"
+    ],
+    "evidence_chapter": 1,
+    "id": "18151-012"
+  },
+  {
+    "book_id": "18151",
+    "type": "cross-chapter",
+    "question": "How long had Nebu-hin-Abenoz been buying slaves from a secret source before the Paratime Police learned of it?",
+    "answers": [
+      "at least ten years",
+      "ten years"
+    ],
+    "evidence": [
+      "For the last ten years, Nebu-hin-Abenoz has been buying slaves from some secret source."
+    ],
+    "evidence_chapter": 1,
+    "id": "18151-013"
+  },
+  {
+    "book_id": "18151",
+    "type": "thematic",
+    "question": "Why is the Paratime Secret threatened by the slave trade uncovered in this story?",
+    "answers": [
+      "Mass kidnappings reveal paratemporal transportation to natives",
+      "It could expose the existence of paratime travel to outtime peoples"
+    ],
+    "evidence": [
+      "this is a matter of mass kidnapings from one sector and transpositions to another"
+    ],
+    "evidence_chapter": 1,
+    "id": "18151-014"
+  },
+  {
+    "type": "single-chapter",
+    "question": "What book was Professor Hardwigg reading when the parchment fell out?",
+    "answers": [
+      "Heims-Kringla of Snorre Tarleson"
+    ],
+    "evidence": [
+      "It is the Heims-Kringla of Snorre Tarleson,\" he said, \"the celebrated Icelandic author of the twelfth century"
+    ],
+    "evidence_chapter": 2,
+    "book_id": "18857",
+    "id": "18857-015"
+  },
+  {
+    "type": "single-chapter",
+    "question": "What speech defect did Professor Hardwigg have?",
+    "answers": [
+      "He stammered"
+    ],
+    "evidence": [
+      "he stammered"
+    ],
+    "evidence_chapter": 2,
+    "book_id": "18857",
+    "id": "18857-016"
+  },
+  {
+    "type": "cross-chapter",
+    "question": "According to Professor Hardwigg, what was the purpose of the reference to the shadow of Scartaris?",
+    "answers": [
+      "to point out the exact crater that is the entrance"
+    ],
+    "evidence": [
+      "the shadow of Mount Scartaris falls upon the one crater"
+    ],
+    "evidence_chapter": 5,
+    "book_id": "18857",
+    "id": "18857-017"
+  },
+  {
+    "type": "cross-chapter",
+    "question": "How did the sea voyage affect Professor Hardwigg and what did it prevent him from doing?",
+    "answers": [
+      "He was seasick and could not question Captain Bjarne about Sneffels"
+    ],
+    "evidence": [
+      "my uncle to his great annoyance, and even shame, was remarkably seasick"
+    ],
+    "evidence_chapter": 7,
+    "book_id": "18857",
+    "id": "18857-018"
+  },
+  {
+    "type": "thematic",
+    "question": "What is Professor Hardwigg's attitude toward scientific theories that contradict his plans?",
+    "answers": [
+      "He dismisses them and says he cares nothing for theories"
+    ],
+    "evidence": [
+      "I care nothing for theories,\" retorted my uncle"
+    ],
+    "evidence_chapter": 5,
+    "book_id": "18857",
+    "id": "18857-019"
+  },
+  {
+    "book_id": "19476",
+    "type": "single-chapter",
+    "question": "At what time and on what date did the passengers of the _St. Louis_ first see the strange object in the sky?",
+    "answers": [
+      "About eight o'clock on the morning of the 5th of November, 1900",
+      "8:00 a.m. on November 5, 1900"
+    ],
+    "evidence": [
+      "About eight o'clock on the morning of the 5th of November, 1900"
+    ],
+    "evidence_chapter": 2,
+    "id": "19476-020"
+  },
+  {
+    "book_id": "19476",
+    "type": "single-chapter",
+    "question": "Who was the inventor of the _Astronef_ according to Lord Redgrave?",
+    "answers": [
+      "Miss Rennick's father",
+      "Professor Rennick"
+    ],
+    "evidence": [
+      "Her father was the inventor of that craft of mine."
+    ],
+    "evidence_chapter": 2,
+    "id": "19476-021"
+  },
+  {
+    "book_id": "19476",
+    "type": "cross-chapter",
+    "question": "What was Lord Redgrave's solemn obligation to the inventor of the _Astronef_?",
+    "answers": [
+      "To blow her to pieces rather than allow her to be used as a fighting machine",
+      "To destroy her rather than use her as a warship"
+    ],
+    "evidence": [
+      "to blow her to pieces rather than allow her to be used as a fighting machine"
+    ],
+    "evidence_chapter": 2,
+    "id": "19476-022"
+  },
+  {
+    "book_id": "19476",
+    "type": "cross-chapter",
+    "question": "How did Zaidie respond when Lord Redgrave asked whether his prisoners should be released unconditionally?",
+    "answers": [
+      "She refused, saying 'There's one dissentient'",
+      "She chose to stay with him, surrendering at discretion"
+    ],
+    "evidence": [
+      "There's one dissentient. We are prisoners, and I guess I'd better surrender at discretion."
+    ],
+    "evidence_chapter": 4,
+    "id": "19476-023"
+  },
+  {
+    "book_id": "19476",
+    "type": "thematic",
+    "question": "What does the abduction of Zaidie and Mrs. Van Stuyler suggest about the _Astronef_'s effect on social rules?",
+    "answers": [
+      "It carries people beyond the reach of human law and conventional social rules",
+      "Technology can free individuals from social conventions"
+    ],
+    "evidence": [
+      "beyond the reach of human law, both criminal and conventional"
+    ],
+    "evidence_chapter": 3,
+    "id": "19476-024"
+  },
+  {
+    "book_id": "20121",
+    "type": "single-chapter",
+    "question": "What is the name of the star system planet known as New Texas?",
+    "answers": [
+      "Capella IV"
+    ],
+    "evidence": [
+      "So we're sending you to Capella IV."
+    ],
+    "evidence_chapter": 2,
+    "id": "20121-025"
+  },
+  {
+    "book_id": "20121",
+    "type": "single-chapter",
+    "question": "What did the sealed trunk in the Ambassador's luggage contain?",
+    "answers": [
+      "clothes",
+      "a trunk full of clothes"
+    ],
+    "evidence": [
+      "full of clothes"
+    ],
+    "evidence_chapter": 3,
+    "id": "20121-026"
+  },
+  {
+    "book_id": "20121",
+    "type": "cross-chapter",
+    "question": "Who reported that the Ambassador had been kidnapped at the spaceport?",
+    "answers": [
+      "a blond woman",
+      "a tall blond"
+    ],
+    "evidence": [
+      "we got a report, from a mighty good source, that you'd been kidnapped at the spaceport by a gang of thugs!"
+    ],
+    "evidence_chapter": 4,
+    "id": "20121-027"
+  },
+  {
+    "book_id": "20121",
+    "type": "cross-chapter",
+    "question": "Why did the Ambassador send Stonehenge to get the Space Navy fleet?",
+    "answers": [
+      "to bring the fleet within radio call",
+      "for protection against z'Srauff invasion"
+    ],
+    "evidence": [
+      "I want the Fleet within radio call."
+    ],
+    "evidence_chapter": 4,
+    "id": "20121-028"
+  },
+  {
+    "book_id": "20121",
+    "type": "thematic",
+    "question": "What phrase does the text use to characterize New Texas politics?",
+    "answers": [
+      "anarchy tempered by assassination"
+    ],
+    "evidence": [
+      "anarchy tempered by assassination"
+    ],
+    "evidence_chapter": 3,
+    "id": "20121-029"
+  },
+  {
+    "type": "single-chapter",
+    "question": "What did the Time Traveller say the model's white lever would do when pressed?",
+    "answers": [
+      "Sends the machine gliding into the future",
+      "It sends the machine into the future"
+    ],
+    "evidence": [
+      "this lever, being pressed over, sends the machine gliding into the future"
+    ],
+    "evidence_chapter": 1,
+    "book_id": "35",
+    "id": "35-030"
+  },
+  {
+    "type": "single-chapter",
+    "question": "What was the Time Traveller's first interpretation of the future world after seeing the view from the hill?",
+    "answers": [
+      "Humanity upon the wane",
+      "The sunset of mankind"
+    ],
+    "evidence": [
+      "It seemed to me that I had happened upon humanity upon the wane."
+    ],
+    "evidence_chapter": 1,
+    "book_id": "35",
+    "id": "35-031"
+  },
+  {
+    "type": "cross-chapter",
+    "question": "In Chapter IV, what did the Time Traveller expect to find in the future, and in Chapter VI, what did he conclude he had actually found?",
+    "answers": [
+      "He expected wonderful advances but found humanity upon the wane",
+      "He expected a grave, intellectual posterity but found decline"
+    ],
+    "evidence": [
+      "What strange developments of humanity, what wonderful advances upon our rudimentary civilisation, I thought",
+      "It seemed to me that I had happened upon humanity upon the wane."
+    ],
+    "evidence_chapter": 1,
+    "book_id": "35",
+    "id": "35-032"
+  },
+  {
+    "type": "cross-chapter",
+    "question": "In Chapter II, the Time Traveller said the model took two years to make; in Chapter IV, what problem delayed the full machine?",
+    "answers": [
+      "One nickel bar was exactly one inch too short",
+      "A nickel bar was an inch too short"
+    ],
+    "evidence": [
+      "It took two years to make",
+      "one of the nickel bars was exactly one inch too short"
+    ],
+    "evidence_chapter": 1,
+    "book_id": "35",
+    "id": "35-033"
+  },
+  {
+    "type": "thematic",
+    "question": "According to the Time Traveller, what caused the decline of humanity?",
+    "answers": [
+      "Security made strength and intelligence unnecessary",
+      "The elimination of struggle led to decline"
+    ],
+    "evidence": [
+      "Strength is the outcome of need; security sets a premium on feebleness."
+    ],
+    "evidence_chapter": 1,
+    "book_id": "35",
+    "id": "35-034"
+  },
+  {
+    "book_id": "36",
+    "type": "single-chapter",
+    "question": "Where did the first cylinder land, and what did Ogilvy find there?",
+    "answers": [
+      "On Horsell Common, not far from the sand-pits",
+      "A huge cylinder partly buried in sand"
+    ],
+    "evidence": [
+      "Find it he did, soon after dawn, and not far from the sand-pits.",
+      "The uncovered part had the appearance of a huge cylinder"
+    ],
+    "evidence_chapter": 1,
+    "id": "36-035"
+  },
+  {
+    "book_id": "36",
+    "type": "single-chapter",
+    "question": "What was the appearance of the first Martian to emerge from the cylinder?",
+    "answers": [
+      "A big greyish rounded bulk, the size of a bear",
+      "With two large dark-coloured eyes and tentacles"
+    ],
+    "evidence": [
+      "A big greyish rounded bulk, the size, perhaps, of a bear, was rising slowly and painfully out of the cylinder.",
+      "Two large dark-coloured eyes were regarding me steadfastly."
+    ],
+    "evidence_chapter": 1,
+    "id": "36-036"
+  },
+  {
+    "book_id": "36",
+    "type": "cross-chapter",
+    "question": "How did people outside the immediate landing area react to the Martian arrival?",
+    "answers": [
+      "They remained ignorant and continued their ordinary routines",
+      "They dismissed it as unimportant"
+    ],
+    "evidence": [
+      "for the most part the daily routine of working, eating, drinking, sleeping, went on as it had done for countless years",
+      "the world went in ignorance of one of the gravest dangers that ever threatened the human race"
+    ],
+    "evidence_chapter": 1,
+    "id": "36-037"
+  },
+  {
+    "book_id": "36",
+    "type": "cross-chapter",
+    "question": "What did the narrator expect to find inside the cylinder, and what did he actually see when it opened?",
+    "answers": [
+      "He expected a man or thought the opening was automatic; he saw tentacled monsters"
+    ],
+    "evidence": [
+      "I judged it improbable that it contained any living creature. I thought the unscrewing might be automatic.",
+      "something resembling a little grey snake, about the thickness of a walking stick, coiled up out of the writhing middle"
+    ],
+    "evidence_chapter": 1,
+    "id": "36-038"
+  },
+  {
+    "book_id": "36",
+    "type": "thematic",
+    "question": "What human attitude does the narrator criticize as the Martians prepare to invade?",
+    "answers": [
+      "Complacency and vanity",
+      "The assumption of human empire over matter"
+    ],
+    "evidence": [
+      "With infinite complacency men went to and fro over this globe about their little affairs, serene in their assurance of their empire over matter."
+    ],
+    "evidence_chapter": 1,
+    "id": "36-039"
+  },
+  {
+    "type": "single-chapter",
+    "question": "What did Mr. Enfield call the building with the door in the by-street?",
+    "answers": [
+      "Black Mail House"
+    ],
+    "evidence": [
+      "Black Mail House is what I call the place with the door, in consequence."
+    ],
+    "evidence_chapter": 1,
+    "book_id": "43",
+    "id": "43-040"
+  },
+  {
+    "type": "single-chapter",
+    "question": "What did the broken stick found at the Carew murder scene turn out to be?",
+    "answers": [
+      "A cane Mr. Utterson had presented to Henry Jekyll"
+    ],
+    "evidence": [
+      "he recognised it for one that he had himself presented many years before to Henry Jekyll"
+    ],
+    "evidence_chapter": 1,
+    "book_id": "43",
+    "id": "43-041"
+  },
+  {
+    "type": "cross-chapter",
+    "question": "What was common to Mr. Enfield's and Mr. Utterson's first impressions of Mr. Hyde?",
+    "answers": [
+      "Both felt an intense, inexplicable disgust or dislike"
+    ],
+    "evidence": [
+      "I never saw a man I so disliked, and yet I scarce know why",
+      "the hitherto unknown disgust, loathing and fear with which Mr. Utterson regarded him"
+    ],
+    "evidence_chapter": 1,
+    "book_id": "43",
+    "id": "43-042"
+  },
+  {
+    "type": "cross-chapter",
+    "question": "What did Dr. Jekyll say he could do at any moment, and what happened after Mr. Hyde disappeared?",
+    "answers": [
+      "He could be rid of Mr. Hyde; a new life began for Jekyll"
+    ],
+    "evidence": [
+      "the moment I choose, I can be rid of Mr. Hyde",
+      "Now that that evil influence had been withdrawn, a new life began for Dr. Jekyll"
+    ],
+    "evidence_chapter": 1,
+    "book_id": "43",
+    "id": "43-043"
+  },
+  {
+    "type": "thematic",
+    "question": "What theme about evil is suggested by Mr. Utterson's description of Hyde's face?",
+    "answers": [
+      "Evil is visible as a foul soul radiating through and transfiguring the body"
+    ],
+    "evidence": [
+      "the mere radiance of a foul soul that thus transpires through, and transfigures, its clay continent"
+    ],
+    "evidence_chapter": 1,
+    "book_id": "43",
+    "id": "43-044"
+  },
+  {
+    "book_id": "50133",
+    "type": "single-chapter",
+    "question": "What is the name of the isolated village described in the opening chapter?",
+    "answers": [
+      "Dunwich"
+    ],
+    "evidence": [
+      "Afterward one sometimes learns that one has been through Dunwich."
+    ],
+    "evidence_chapter": 1,
+    "id": "50133-045"
+  },
+  {
+    "book_id": "50133",
+    "type": "single-chapter",
+    "question": "What color was the ichor in the pool where the dying creature lay?",
+    "answers": [
+      "greenish-yellow"
+    ],
+    "evidence": [
+      "a fetid pool of greenish-yellow ichor and tarry stickiness"
+    ],
+    "evidence_chapter": 1,
+    "id": "50133-046"
+  },
+  {
+    "book_id": "50133",
+    "type": "cross-chapter",
+    "question": "Who was Wilbur Whateley's mother, and what was her fate?",
+    "answers": [
+      "Lavinia Whateley; she disappeared and was never seen again"
+    ],
+    "evidence": [
+      "a somewhat deformed, unattractive albino woman",
+      "poor Lavinia Whateley, the twisted albino, was never seen again."
+    ],
+    "evidence_chapter": 1,
+    "id": "50133-047"
+  },
+  {
+    "book_id": "50133",
+    "type": "cross-chapter",
+    "question": "What sounds did witnesses report coming from the sealed upper story of the Whateley house?",
+    "answers": [
+      "a horse stamping; rhythmical surging or lapping"
+    ],
+    "evidence": [
+      "he thought he heard a horse stamping on that floor above.",
+      "a disquieting suggestion of rhythmical surging or lapping"
+    ],
+    "evidence_chapter": 1,
+    "id": "50133-048"
+  },
+  {
+    "book_id": "50133",
+    "type": "thematic",
+    "question": "What do the ancient forbidden books symbolize in the story?",
+    "answers": [
+      "dangerous knowledge that brings destruction"
+    ],
+    "evidence": [
+      "the hideous Necronomicon of the mad Arab Alhazred",
+      "monstrous blasphemy in quest of which the thing had perished"
+    ],
+    "evidence_chapter": 1,
+    "id": "50133-049"
+  },
+  {
+    "book_id": "5230",
+    "type": "single-chapter",
+    "question": "What did the stranger carry when he first arrived at the 'Coach and Horses'?",
+    "answers": [
+      "a little black portmanteau",
+      "a black portmanteau"
+    ],
+    "evidence": [
+      "carrying a little black portmanteau in his thickly gloved hand."
+    ],
+    "evidence_chapter": 2,
+    "id": "5230-050"
+  },
+  {
+    "book_id": "5230",
+    "type": "single-chapter",
+    "question": "What did Dr. Cuss see when the stranger held out his arm during their interview?",
+    "answers": [
+      "an empty sleeve",
+      "no hand, just an empty sleeve"
+    ],
+    "evidence": [
+      "No hand—just an empty sleeve."
+    ],
+    "evidence_chapter": 5,
+    "id": "5230-051"
+  },
+  {
+    "book_id": "5230",
+    "type": "thematic",
+    "question": "How do the people of Iping interpret the stranger's strange behavior?",
+    "answers": [
+      "They suspect he is a criminal, an anarchist, a piebald, or a harmless lunatic",
+      "suspicion and fear; various theories about his identity"
+    ],
+    "evidence": [
+      "a view largely entertained that he was a criminal trying to escape from justice by wrapping himself up",
+      "regarding the stranger as a harmless lunatic"
+    ],
+    "evidence_chapter": 5,
+    "id": "5230-052"
+  },
+  {
+    "book_id": "62",
+    "type": "single-chapter",
+    "question": "What did John Carter find at the end of the cliff trail in Arizona?",
+    "answers": [
+      "a large cave"
+    ],
+    "evidence": [
+      "a sharp turn to the right brought me to the mouth of a large cave"
+    ],
+    "evidence_chapter": 2,
+    "id": "62-053"
+  },
+  {
+    "book_id": "62",
+    "type": "single-chapter",
+    "question": "What color is the iris of the eyes of the green Martians?",
+    "answers": [
+      "blood red"
+    ],
+    "evidence": [
+      "The iris of the eyes is blood red, as in Albinos, while the pupil is dark."
+    ],
+    "evidence_chapter": 4,
+    "id": "62-054"
+  },
+  {
+    "book_id": "62",
+    "type": "cross-chapter",
+    "question": "Who looked after John Carter during his captivity among the green Martians?",
+    "answers": [
+      "Sola and a Martian watch dog"
+    ],
+    "evidence": [
+      "Sola stared into the brute's wicked-looking eyes",
+      "this fellow guarded me carefully during the time I remained a captive among these green men"
+    ],
+    "evidence_chapter": 6,
+    "id": "62-055"
+  },
+  {
+    "book_id": "62",
+    "type": "cross-chapter",
+    "question": "What did Sola bring John Carter to eat and drink, and what was the drink actually made from?",
+    "answers": [
+      "a cheese-like solid and a milk-like liquid from a large plant"
+    ],
+    "evidence": [
+      "The food consisted of about a pound of some solid substance of the consistency of cheese",
+      "but from a large plant which grows practically without water"
+    ],
+    "evidence_chapter": 6,
+    "id": "62-056"
+  },
+  {
+    "book_id": "62",
+    "type": "thematic",
+    "question": "What recurring theme is illustrated by John Carter's willingness to charge the Apache camp alone?",
+    "answers": [
+      "He feels subconsciously forced into the path of duty; cowardice is not optional for him."
+    ],
+    "evidence": [
+      "I am subconsciously forced into the path of duty without recourse to tiresome mental processes."
+    ],
+    "evidence_chapter": 2,
+    "id": "62-057"
+  },
+  {
+    "book_id": "64",
+    "type": "single-chapter",
+    "question": "What color is the grasslike vegetation where John Carter first lands on his return to Mars?",
+    "answers": [
+      "red"
+    ],
+    "evidence": [
+      "I lay upon a close-cropped sward of red grasslike vegetation"
+    ],
+    "evidence_chapter": 2,
+    "id": "64-058"
+  },
+  {
+    "book_id": "64",
+    "type": "single-chapter",
+    "question": "What is the name of the sea located in the Valley Dor?",
+    "answers": [
+      "Lost Sea of Korus"
+    ],
+    "evidence": [
+      "to await in the Valley Dor upon the shores of the Lost Sea of Korus"
+    ],
+    "evidence_chapter": 4,
+    "id": "64-059"
+  },
+  {
+    "book_id": "64",
+    "type": "thematic",
+    "question": "What central theme about Barsoomian religion is revealed by the reality of the Valley Dor?",
+    "answers": [
+      "The supposed heaven is a lie and a death trap",
+      "Faith in a peaceful afterlife is cruelly betrayed"
+    ],
+    "evidence": [
+      "This, John Carter, is Heaven. His tone was cold and ironical",
+      "the legend is a true one, and that the man told only of what he saw"
+    ],
+    "evidence_chapter": 4,
+    "id": "64-060"
+  },
+  {
+    "book_id": "68",
+    "type": "single-chapter",
+    "question": "Who accompanies John Carter through the Valley Dor at night?",
+    "answers": [
+      "Woola, his Martian hound"
+    ],
+    "evidence": [
+      "Only Woola, my Martian hound, accompanied me."
+    ],
+    "evidence_chapter": 1,
+    "id": "68-061"
+  },
+  {
+    "book_id": "68",
+    "type": "single-chapter",
+    "question": "What floating object showed John Carter he was on the right river branch?",
+    "answers": [
+      "a sorapus nutshell"
+    ],
+    "evidence": [
+      "the shell of one of the great, succulent fruits of the sorapus tree"
+    ],
+    "evidence_chapter": 1,
+    "id": "68-062"
+  },
+  {
+    "book_id": "68",
+    "type": "cross-chapter",
+    "question": "How does John Carter get the Temple of the Sun door to open?",
+    "answers": [
+      "By using Thurid's radium torch and the light-ray combination scratched on its case"
+    ],
+    "evidence": [
+      "the mechanism of the lock was actuated by light rays"
+    ],
+    "evidence_chapter": 1,
+    "id": "68-063"
+  },
+  {
+    "book_id": "68",
+    "type": "cross-chapter",
+    "question": "Where do the underground river and Woola's tracking finally lead John Carter?",
+    "answers": [
+      "To the base of the Temple of the Sun"
+    ],
+    "evidence": [
+      "I had reached the base of the Temple of the Sun!"
+    ],
+    "evidence_chapter": 1,
+    "id": "68-064"
+  },
+  {
+    "book_id": "68",
+    "type": "thematic",
+    "question": "What is John Carter's overriding motive during his quest beneath Mars?",
+    "answers": [
+      "His love for Dejah Thoris and his determination to rescue her"
+    ],
+    "evidence": [
+      "the mere thought that I was nearing my beloved princess raised me above every material want"
+    ],
+    "evidence_chapter": 1,
+    "id": "68-065"
+  },
+  {
+    "book_id": "72",
+    "type": "single-chapter",
+    "question": "Who is the man who seizes Thuvia's arm in the royal gardens in Chapter 1?",
+    "answers": [
+      "Astok, Prince of Dusar"
+    ],
+    "evidence": [
+      "\"You forget yourself, and the customs of Barsoom, Astok,\" she said."
+    ],
+    "evidence_chapter": 2,
+    "id": "72-066"
+  },
+  {
+    "book_id": "72",
+    "type": "single-chapter",
+    "question": "What is Thar Ban's rank among the hordes of Torquas?",
+    "answers": [
+      "Jed"
+    ],
+    "evidence": [
+      "Thar Ban, jed among the hordes of Torquas"
+    ],
+    "evidence_chapter": 5,
+    "id": "72-067"
+  },
+  {
+    "book_id": "72",
+    "type": "thematic",
+    "question": "What does Carthoris' reaction to Thuvia's engagement reveal about the theme of honor in love?",
+    "answers": [
+      "He accepts her choice with sincerity and remains loyal to Kulan Tith"
+    ],
+    "evidence": [
+      "There is no dishonour in it either to you or to Kulan Tith or to myself."
+    ],
+    "evidence_chapter": 2,
+    "id": "72-068"
+  },
+  {
+    "book_id": "83",
+    "type": "single-chapter",
+    "question": "What condition was imposed on candidates for membership in the Gun Club?",
+    "answers": [
+      "having designed or perfected a cannon, or at least a firearm"
+    ],
+    "evidence": [
+      "having designed, or (more or less) perfected a cannon"
+    ],
+    "evidence_chapter": 1,
+    "id": "83-069"
+  },
+  {
+    "book_id": "83",
+    "type": "single-chapter",
+    "question": "According to the Cambridge Observatory, what is the moon's distance at perigee?",
+    "answers": [
+      "218,657 miles"
+    ],
+    "evidence": [
+      "in its apogee the moon is 247,552 miles, and in its perigee, 218,657 miles only distant"
+    ],
+    "evidence_chapter": 4,
+    "id": "83-070"
+  },
+  {
+    "book_id": "83",
+    "type": "cross-chapter",
+    "question": "Why did the Cambridge Observatory recommend firing the projectile on the 4th of December of the ensuing year?",
+    "answers": [
+      "because the moon would then be at perigee and crossing the zenith simultaneously"
+    ],
+    "evidence": [
+      "on the 4th of December in the ensuing year the moon will present these two conditions."
+    ],
+    "evidence_chapter": 4,
+    "id": "83-071"
+  },
+  {
+    "book_id": "83",
+    "type": "cross-chapter",
+    "question": "In what range of latitudes must the cannon be located for the shot to be discharged perpendicularly?",
+    "answers": [
+      "between 0° and 28° North or South latitude"
+    ],
+    "evidence": [
+      "the cannon ought to be planted in a country situated between 0° and 28° of N. or S. lat."
+    ],
+    "evidence_chapter": 4,
+    "id": "83-072"
+  },
+  {
+    "book_id": "83",
+    "type": "thematic",
+    "question": "How does the narrative characterize the Americans' natural aptitude for gunnery?",
+    "answers": [
+      "as engineers and mechanicians by right of birth"
+    ],
+    "evidence": [
+      "Yankees, the first mechanicians in the world, are engineers"
+    ],
+    "evidence_chapter": 1,
+    "id": "83-073"
+  },
+  {
+    "book_id": "84",
+    "type": "single-chapter",
+    "question": "According to Letter 1, where does Walton intend to hire a ship?",
+    "answers": [
+      "Archangel",
+      "the town of Archangel"
+    ],
+    "evidence": [
+      "my intention is to hire a ship there"
+    ],
+    "evidence_chapter": 1,
+    "id": "84-074"
+  },
+  {
+    "book_id": "84",
+    "type": "single-chapter",
+    "question": "What did the ship's master do with his farm and prize-money after his intended bride confessed she loved another?",
+    "answers": [
+      "He gave them to his rival",
+      "bestowed the whole on his rival"
+    ],
+    "evidence": [
+      "he bestowed the whole on his rival, together with the remains of his prize-money"
+    ],
+    "evidence_chapter": 1,
+    "id": "84-075"
+  },
+  {
+    "book_id": "84",
+    "type": "cross-chapter",
+    "question": "What books did Walton read as a child, according to Letters 1 and 2?",
+    "answers": [
+      "Uncle Thomas's books of voyages",
+      "histories of voyages"
+    ],
+    "evidence": [
+      "a history of all the voyages made for purposes of discovery composed the whole of our good Uncle Thomas’ library",
+      "I ran wild on a common and read nothing but our Uncle Thomas’ books of voyages"
+    ],
+    "evidence_chapter": 1,
+    "id": "84-076"
+  },
+  {
+    "book_id": "84",
+    "type": "cross-chapter",
+    "question": "In Letter 2 Walton laments having no friend; by Letter 4, what relationship does he form?",
+    "answers": [
+      "He loves the rescued stranger as a brother",
+      "the stranger becomes like a brother"
+    ],
+    "evidence": [
+      "I have no friend, Margaret:",
+      "I begin to love him as a brother"
+    ],
+    "evidence_chapter": 1,
+    "id": "84-077"
+  },
+  {
+    "book_id": "84",
+    "type": "thematic",
+    "question": "What warning does the stranger give Walton about his quest for knowledge?",
+    "answers": [
+      "The gratification of his wishes may be a serpent to sting him",
+      "it may be a serpent to sting him"
+    ],
+    "evidence": [
+      "the gratification of your wishes may not be a serpent to sting you"
+    ],
+    "evidence_chapter": 1,
+    "id": "84-078"
+  },
+  {
+    "book_id": "97",
+    "type": "single-chapter",
+    "question": "What geometric form do the Women of Flatland have?",
+    "answers": [
+      "Straight Lines"
+    ],
+    "evidence": [
+      "Our Women are Straight Lines."
+    ],
+    "evidence_chapter": 1,
+    "id": "97-079"
+  },
+  {
+    "book_id": "97",
+    "type": "single-chapter",
+    "question": "What is the most common shape for a house in Flatland?",
+    "answers": [
+      "Pentagonal / five-sided"
+    ],
+    "evidence": [
+      "The most common form for the construction of a house is five-sided or pentagonal"
+    ],
+    "evidence_chapter": 1,
+    "id": "97-080"
+  },
+  {
+    "book_id": "97",
+    "type": "cross-chapter",
+    "question": "What three methods of recognizing one another are described in Flatland?",
+    "answers": [
+      "Hearing, Feeling, and Sight"
+    ],
+    "evidence": [
+      "The answer is threefold. The first means of recognition is the sense of hearing",
+      "the process of 'feeling' is with us",
+      "how we are able to recognize one another by the sense of sight"
+    ],
+    "evidence_chapter": 1,
+    "id": "97-081"
+  },
+  {
+    "book_id": "97",
+    "type": "cross-chapter",
+    "question": "Why is 'Feeling' discouraged among the higher classes in Flatland?",
+    "answers": [
+      "It prevents learning Sight Recognition",
+      "It is considered a lower-class practice"
+    ],
+    "evidence": [
+      "None who in early life resort to 'Feeling' will ever learn 'Seeing' in perfection",
+      "Feeling is, among our Women and lower classes"
+    ],
+    "evidence_chapter": 1,
+    "id": "97-082"
+  },
+  {
+    "book_id": "97",
+    "type": "thematic",
+    "question": "What theme is conveyed by the narrator's statement that he alone knows the true solution to the problem of light and is mocked?",
+    "answers": [
+      "Knowledge of higher dimensions is ridiculed",
+      "The enlightened individual is persecuted by society"
+    ],
+    "evidence": [
+      "I am mocked at—I, the sole possessor of the truths of Space"
+    ],
+    "evidence_chapter": 1,
+    "id": "97-083"
+  }
+]
