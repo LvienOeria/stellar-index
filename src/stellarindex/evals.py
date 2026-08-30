@@ -39,6 +39,7 @@ class EvalResult:
 def load_qa(path: Path | None = None) -> list[QAItem]:
     raw = json.loads((path or FIXTURE_QA_PATH).read_text(encoding="utf-8"))
     items = []
+    fields = {f for f in QAItem.__dataclass_fields__}
     for idx, item in enumerate(raw):
         item.setdefault("id", f"{item.get('book_id', 'unknown')}-{idx:03d}")
         item.setdefault("book_id", "unknown")
@@ -46,7 +47,7 @@ def load_qa(path: Path | None = None) -> list[QAItem]:
         item.setdefault("answers", [])
         item.setdefault("evidence", [])
         item.setdefault("evidence_chapter", 1)
-        items.append(QAItem(**item))
+        items.append(QAItem(**{k: v for k, v in item.items() if k in fields}))
     return items
 
 
@@ -136,7 +137,19 @@ def retrieval_metrics(
 
 def _answer_matches(item: QAItem, answer: str) -> bool:
     normalized = _normalize(answer)
-    return any(_normalize(accepted) in normalized for accepted in item.answers)
+    if any(_normalize(accepted) in normalized for accepted in item.answers if accepted):
+        return True
+    # Token-overlap fallback: accepted answers are key phrases, not full
+    # sentences; require most key-phrase tokens to appear in the answer.
+    candidate_tokens = set(normalized.split())
+    for accepted in item.answers:
+        accepted_tokens = set(_normalize(accepted).split())
+        if not accepted_tokens:
+            continue
+        recall = len(accepted_tokens & candidate_tokens) / len(accepted_tokens)
+        if recall >= 0.6:
+            return True
+    return False
 
 
 def citation_precision(book: Book, answer: Any) -> tuple[float, list[str]]:

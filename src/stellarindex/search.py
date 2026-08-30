@@ -261,7 +261,7 @@ def llm_rerank(query: str, results: list[SearchResult], client: Any) -> list[Sea
     payload = {
         "query": query,
         "candidates": [
-            {"chunk_id": r.chunk_id, "text": r.parent_text[:1200]} for r in results[:20]
+            {"chunk_id": r.chunk_id, "text": r.parent_text[:600]} for r in results[:8]
         ],
     }
     messages = [

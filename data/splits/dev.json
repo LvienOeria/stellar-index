@@ -1,0 +1,373 @@
+[
+  {
+    "book_id": "83",
+    "type": "single-chapter",
+    "question": "What condition was imposed on candidates for membership in the Gun Club?",
+    "answers": [
+      "designed or perfected a cannon or firearm"
+    ],
+    "evidence": [
+      "having designed, or (more or less) perfected a cannon"
+    ],
+    "evidence_chapter": 1,
+    "id": "83-069",
+    "curation": {
+      "clarity": 5,
+      "answerability": 5,
+      "reason": "The chapter explicitly states the condition imposed on every candidate: having designed, or more or less perfected, a cannon, or at least a firearm of some description."
+    }
+  },
+  {
+    "book_id": "20121",
+    "type": "single-chapter",
+    "question": "What is the name of the star system planet known as New Texas?",
+    "answers": [
+      "Capella IV"
+    ],
+    "evidence": [
+      "So we're sending you to Capella IV."
+    ],
+    "evidence_chapter": 2,
+    "id": "20121-025",
+    "curation": {
+      "clarity": 5,
+      "answerability": 5,
+      "reason": "The chapter explicitly identifies New Texas as Capella IV when Klüng helps Silk recall the name, so the answer is clearly supported and unambiguous."
+    }
+  },
+  {
+    "type": "cross-chapter",
+    "question": "What was common to Mr. Enfield's and Mr. Utterson's first impressions of Mr. Hyde?",
+    "answers": [
+      "intense inexplicable disgust"
+    ],
+    "evidence": [
+      "I never saw a man I so disliked, and yet I scarce know why",
+      "the hitherto unknown disgust, loathing and fear with which Mr. Utterson regarded him"
+    ],
+    "evidence_chapter": 1,
+    "book_id": "43",
+    "id": "43-042",
+    "curation": {
+      "clarity": 5,
+      "answerability": 5,
+      "reason": "Both Enfield and Utterson are explicitly described as feeling strong, unexplained revulsion toward Hyde at first sight."
+    }
+  },
+  {
+    "book_id": "164",
+    "type": "thematic",
+    "question": "What theme is emphasized by the worldwide reaction to the reported sea monster?",
+    "answers": [
+      "human fascination with the marvellous/unknown",
+      "excitement and credulity surrounding mysterious phenomena"
+    ],
+    "evidence": [
+      "the excitement produced in the entire world by this supernatural apparition"
+    ],
+    "evidence_chapter": 2,
+    "id": "164-009",
+    "curation": {
+      "clarity": 5,
+      "answerability": 5,
+      "reason": "The chapter explicitly states that the worldwide excitement was due to a tendency of the human mind to favor the marvellous, making the theme directly supported."
+    }
+  },
+  {
+    "book_id": "164",
+    "type": "single-chapter",
+    "question": "What ship was struck and damaged on 13 April 1867, according to chapter 1?",
+    "answers": [
+      "the Scotia"
+    ],
+    "evidence": [
+      "The 13th of April, 1867, the sea being beautiful, the breeze favourable, the _Scotia_, of the Cunard Company’s line"
+    ],
+    "evidence_chapter": 2,
+    "id": "164-007",
+    "curation": {
+      "clarity": 5,
+      "answerability": 5,
+      "reason": "The chapter explicitly states that on 13 April 1867 the Scotia was struck and damaged, so the question is clear and the accepted answer is correct."
+    }
+  },
+  {
+    "book_id": "84",
+    "type": "cross-chapter",
+    "question": "What books did Walton read as a child, according to Letters 1 and 2?",
+    "answers": [
+      "Uncle Thomas's books of voyages",
+      "histories of voyages"
+    ],
+    "evidence": [
+      "a history of all the voyages made for purposes of discovery composed the whole of our good Uncle Thomas’ library",
+      "I ran wild on a common and read nothing but our Uncle Thomas’ books of voyages"
+    ],
+    "evidence_chapter": 1,
+    "id": "84-076",
+    "curation": {
+      "clarity": 5,
+      "answerability": 5,
+      "reason": "The question is clear and answerable from Letters 1 and 2; Walton explicitly states he read nothing but Uncle Thomas's books of voyages as a child, and that a history of voyages composed that library."
+    }
+  },
+  {
+    "book_id": "64",
+    "type": "single-chapter",
+    "question": "What color is the grasslike vegetation where John Carter first lands on his return to Mars?",
+    "answers": [
+      "red"
+    ],
+    "evidence": [
+      "I lay upon a close-cropped sward of red grasslike vegetation"
+    ],
+    "evidence_chapter": 2,
+    "id": "64-058",
+    "curation": {
+      "clarity": 5,
+      "answerability": 5,
+      "reason": "The chapter states he lay upon 'a close-cropped sward of red grasslike vegetation,' directly identifying the color as red."
+    }
+  },
+  {
+    "book_id": "62",
+    "type": "single-chapter",
+    "question": "What did John Carter find at the end of the cliff trail in Arizona?",
+    "answers": [
+      "a large cave"
+    ],
+    "evidence": [
+      "a sharp turn to the right brought me to the mouth of a large cave"
+    ],
+    "evidence_chapter": 2,
+    "id": "62-053",
+    "curation": {
+      "clarity": 5,
+      "answerability": 5,
+      "reason": "The chapter explicitly states that after a sharp turn to the right he came to the mouth of a large cave at the end of the cliff trail."
+    }
+  },
+  {
+    "book_id": "72",
+    "type": "thematic",
+    "question": "What does Carthoris' reaction to Thuvia's engagement reveal about the theme of honor in love?",
+    "answers": [
+      "Honorable acceptance and loyalty to Kulan Tith"
+    ],
+    "evidence": [
+      "There is no dishonour in it either to you or to Kulan Tith or to myself."
+    ],
+    "evidence_chapter": 2,
+    "id": "72-068",
+    "curation": {
+      "clarity": 5,
+      "answerability": 5,
+      "reason": "The chapter clearly shows Carthoris accepting Thuvia's engagement to Kulan Tith with sincere good will, declaring there is no dishonor in his love and remaining loyal to his friend, which directly reveals the theme of honor in love."
+    }
+  },
+  {
+    "book_id": "159",
+    "type": "thematic",
+    "question": "What do the puma's cries and the deformed men suggest about Moreau's experiments?",
+    "answers": [
+      "Painful vivisection to create human-like beast men"
+    ],
+    "evidence": [
+      "a notorious vivisector, and these crippled and distorted men",
+      "I heard the puma growling through the wall"
+    ],
+    "evidence_chapter": 1,
+    "id": "159-006",
+    "curation": {
+      "clarity": 5,
+      "answerability": 5,
+      "reason": "The question is clear and directly answerable from the chapter, where the narrator connects the puma's cries, the notorious vivisector Moreau, and the crippled/distorted men to the realization that Moreau is painfully transforming animals into human-like beings."
+    }
+  },
+  {
+    "book_id": "10002",
+    "type": "cross-chapter",
+    "question": "What did the narrator realize about the great building in the arena compared to his own house?",
+    "answers": [
+      "identical except color and size"
+    ],
+    "evidence": [
+      "the body of the building is in the form of a circle",
+      "in no particular, save in color and its enormous size, did the lonely structure vary from this house"
+    ],
+    "evidence_chapter": 1,
+    "id": "10002-087",
+    "curation": {
+      "clarity": 5,
+      "answerability": 5,
+      "reason": "The question is directly answerable from Chapter III, where the narrator explicitly states that the great building in the arena differed from his own house only in color and enormous size."
+    }
+  },
+  {
+    "book_id": "5230",
+    "type": "thematic",
+    "question": "How do the people of Iping interpret the stranger's strange behavior?",
+    "answers": [
+      "various theories: criminal, anarchist, piebald, lunatic"
+    ],
+    "evidence": [
+      "a view largely entertained that he was a criminal trying to escape from justice by wrapping himself up",
+      "regarding the stranger as a harmless lunatic"
+    ],
+    "evidence_chapter": 5,
+    "id": "5230-052",
+    "curation": {
+      "clarity": 5,
+      "answerability": 5,
+      "reason": "The chapter explicitly presents multiple interpretations held by Iping residents, including that the stranger was a criminal, an anarchist, a piebald person, or a harmless lunatic, making the question answerable and the accepted answers correct."
+    }
+  },
+  {
+    "book_id": "159",
+    "type": "single-chapter",
+    "question": "What was the name of the schooner that rescued Prendick?",
+    "answers": [
+      "Ipecacuanha"
+    ],
+    "evidence": [
+      "calls the thing the _Ipecacuanha_, of all silly, infernal names."
+    ],
+    "evidence_chapter": 1,
+    "id": "159-093",
+    "curation": {
+      "clarity": 5,
+      "answerability": 5,
+      "reason": "The chapter explicitly names the rescuing ship as the Ipecacuanha, so the question is unambiguous and answerable from the provided text."
+    }
+  },
+  {
+    "book_id": "50133",
+    "type": "thematic",
+    "question": "What do the ancient forbidden books symbolize in the story?",
+    "answers": [
+      "dangerous knowledge that brings destruction"
+    ],
+    "evidence": [
+      "the hideous Necronomicon of the mad Arab Alhazred",
+      "monstrous blasphemy in quest of which the thing had perished"
+    ],
+    "evidence_chapter": 1,
+    "id": "50133-049",
+    "curation": {
+      "clarity": 5,
+      "answerability": 5,
+      "reason": "The question is clear and answerable from the chapter; the forbidden books, especially the Necronomicon, represent dangerous occult knowledge sought at great cost and linked to destruction."
+    }
+  },
+  {
+    "book_id": "20121",
+    "type": "single-chapter",
+    "question": "What did the sealed trunk in the Ambassador's luggage contain?",
+    "answers": [
+      "clothes"
+    ],
+    "evidence": [
+      "full of clothes"
+    ],
+    "evidence_chapter": 3,
+    "id": "20121-026",
+    "curation": {
+      "clarity": 5,
+      "answerability": 5,
+      "reason": "The chapter explicitly states the sealed trunk was full of clothes, and the accepted answer matches the text."
+    }
+  },
+  {
+    "book_id": "20121",
+    "type": "cross-chapter",
+    "question": "Why did the Ambassador send Stonehenge to get the Space Navy fleet?",
+    "answers": [
+      "to bring the fleet within radio call",
+      "for protection against z'Srauff invasion"
+    ],
+    "evidence": [
+      "I want the Fleet within radio call."
+    ],
+    "evidence_chapter": 4,
+    "id": "20121-028",
+    "curation": {
+      "clarity": 5,
+      "answerability": 5,
+      "reason": "The chapter explicitly states the Ambassador wants the fleet within radio call and mentions protection against possible z'Srauff invasion."
+    }
+  },
+  {
+    "book_id": "83",
+    "type": "single-chapter",
+    "question": "According to the Cambridge Observatory, what is the moon's distance at perigee?",
+    "answers": [
+      "218,657 miles"
+    ],
+    "evidence": [
+      "in its apogee the moon is 247,552 miles, and in its perigee, 218,657 miles only distant"
+    ],
+    "evidence_chapter": 4,
+    "id": "83-070",
+    "curation": {
+      "clarity": 5,
+      "answerability": 5,
+      "reason": "The question is directly answerable from the chapter, which states the moon's perigee distance as 218,657 miles."
+    }
+  },
+  {
+    "book_id": "64",
+    "type": "single-chapter",
+    "question": "What is the name of the sea located in the Valley Dor?",
+    "answers": [
+      "Lost Sea of Korus"
+    ],
+    "evidence": [
+      "to await in the Valley Dor upon the shores of the Lost Sea of Korus"
+    ],
+    "evidence_chapter": 4,
+    "id": "64-059",
+    "curation": {
+      "clarity": 5,
+      "answerability": 5,
+      "reason": "The chapter explicitly names the sea in the Valley Dor as the Lost Sea of Korus."
+    }
+  },
+  {
+    "type": "single-chapter",
+    "question": "What was the Time Traveller's first interpretation of the future world after seeing the view from the hill?",
+    "answers": [
+      "humanity upon the wane",
+      "sunset of mankind"
+    ],
+    "evidence": [
+      "It seemed to me that I had happened upon humanity upon the wane."
+    ],
+    "evidence_chapter": 1,
+    "book_id": "35",
+    "id": "35-031",
+    "curation": {
+      "clarity": 5,
+      "answerability": 5,
+      "reason": "The Time Traveller's first interpretation is explicitly stated in the chapter as 'humanity upon the wane' and thinking of 'the sunset of mankind'."
+    }
+  },
+  {
+    "book_id": "19476",
+    "type": "cross-chapter",
+    "question": "What was Lord Redgrave's solemn obligation to the inventor of the _Astronef_?",
+    "answers": [
+      "to blow her to pieces rather than allow her to be used as a fighting machine",
+      "to destroy her rather than use her as a warship"
+    ],
+    "evidence": [
+      "to blow her to pieces rather than allow her to be used as a fighting machine"
+    ],
+    "evidence_chapter": 2,
+    "id": "19476-022",
+    "curation": {
+      "clarity": 5,
+      "answerability": 5,
+      "reason": "The question is directly answerable from the chapter: Lord Redgrave explicitly says he is under a solemn obligation to the inventor to blow the Astronef to pieces rather than let it be used as a fighting machine. The accepted answers are correct and unambiguous."
+    }
+  }
+]

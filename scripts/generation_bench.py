@@ -15,16 +15,22 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--start", type=int, default=0)
     parser.add_argument("--limit", type=int, default=0)
+    parser.add_argument("--qa-file", default="data/golden_qa.json")
     parser.add_argument("--dense", action="store_true")
     parser.add_argument("--rerank", default="none")
+    parser.add_argument("--query-strategy", default="rewrite")
+    parser.add_argument("--mode", default="rag", choices=["rag", "long-context", "self-route"])
     args = parser.parse_args()
 
     settings = Settings(data_dir=Path("data"), raw_dir=Path("data/raw"), index_dir=Path("data/index"))
     store = IndexStore(Path("data/index/gutenberg.db"))
-    qa = load_qa(Path("data/golden_qa.json"))
+    qa = load_qa(Path(args.qa_file))
     bot = QABot(settings, store)
     book_cache = {}
-    out = Path(f"results/generation-rows-{args.rerank}-{'dense' if args.dense else 'bm25'}.jsonl")
+    qa_slug = Path(args.qa_file).stem
+    out = Path(
+        f"results/generation-rows-{qa_slug}-{args.mode}-{args.rerank}-{'dense' if args.dense else 'bm25'}-{args.query_strategy}.jsonl"
+    )
     out.parent.mkdir(parents=True, exist_ok=True)
 
     with out.open("a", encoding="utf-8") as fh:
@@ -39,7 +45,24 @@ def main() -> None:
             book = book_cache[item.book_id]
             if book is None:
                 continue
-            answer = bot.ask_rag(item.question, dense=args.dense, rerank=args.rerank)
+            if args.mode == "long-context":
+                answer = bot.ask_longctx(item.question, book)
+            elif args.mode == "self-route":
+                answer = bot.ask_self_route(
+                    item.question,
+                    book,
+                    dense=args.dense,
+                    rerank=args.rerank,
+                    query_strategy=args.query_strategy,
+                )
+            else:
+                answer = bot.ask_rag(
+                    item.question,
+                    dense=args.dense,
+                    rerank=args.rerank,
+                    query_strategy=args.query_strategy,
+                    book_id=item.book_id,
+                )
             gen = generation_metrics(item, book, answer)
             row = {
                 "qa_id": item.id,

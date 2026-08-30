@@ -26,8 +26,8 @@ def main() -> None:
     store = get_store(index_dir)
     books = {b.book_id: b for b in load_fixture_books()}
     book_id = st.sidebar.selectbox("book", list(books))
-    mode = st.sidebar.selectbox("mode", ["rag", "long-context", "self-route"])
-    rerank = st.sidebar.selectbox("rerank", ["none", "full", "fast", "llm"])
+    mode = st.sidebar.selectbox("mode", ["self-route", "rag", "long-context"], index=0)
+    rerank = st.sidebar.selectbox("rerank", ["none", "full", "fast", "llm"], index=0)
     dense = st.sidebar.checkbox("dense retrieval", value=False)
 
     question = st.text_input("question", value="Who kept the observatory mirror polished for nineteen years?")

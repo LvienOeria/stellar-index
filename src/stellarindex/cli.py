@@ -81,7 +81,7 @@ def build_cmd(fixtures: bool, dense: bool, data_dir: str, model: str, env_file: 
 @main.command("ask")
 @click.option("--book", "book_id", default="the_last_observatory", show_default=True)
 @click.option("--question", required=True)
-@click.option("--mode", type=click.Choice(["rag", "long-context", "self-route"]), default="rag", show_default=True)
+@click.option("--mode", type=click.Choice(["rag", "long-context", "self-route"]), default="self-route", show_default=True)
 @click.option("--dense", is_flag=True)
 @click.option("--rerank", type=click.Choice(["none", "full", "fast", "llm"]), default="none", show_default=True)
 @click.option("--fixtures", is_flag=True, help="Use the synthetic fixture corpus.")
@@ -131,6 +131,7 @@ def ask_cmd(
 @click.option("--dense", is_flag=True)
 @click.option("--rerank", type=click.Choice(["none", "full", "fast", "llm"]), default="none", show_default=True)
 @click.option("--modes", default="rag", show_default=True, help="Comma-separated: rag,long-context,self-route")
+@click.option("--qa-file", default="data/golden_qa_curated.json", show_default=True, help="Golden QA JSON file")
 @click.option("--data-dir", default="data", show_default=True)
 @click.option("--model", default="deepseek-v4-flash", show_default=True)
 @click.option("--env-file", default=".env", show_default=True)
@@ -143,6 +144,7 @@ def eval_cmd(
     data_dir: str,
     model: str,
     env_file: str,
+    qa_file: str,
 ) -> None:
     settings = _settings(data_dir, model, env_file)
     if fixtures:
@@ -150,7 +152,7 @@ def eval_cmd(
         qa = load_qa()
     else:
         store = IndexStore(settings.index_dir / "gutenberg.db")
-        qa = load_qa(Path("data/golden_qa.json"))
+        qa = load_qa(Path(qa_file))
         books = []
         for row in store.conn.execute("SELECT book_id, title, author FROM books").fetchall():
             raw = settings.raw_dir / f"pg{row['book_id']}.txt"

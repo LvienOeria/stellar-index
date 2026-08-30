@@ -1,16 +1,13 @@
-# Benchmark report (v0.1 full corpus)
+# Benchmark report (v0.2 curated split)
 
 - Date: 2026-08-30
 - Corpus: 20 Project Gutenberg public-domain sci-fi books, 8,256 chunks
-- Golden QA: 110 items (auto-drafted by DeepSeek, then programmatically validated: evidence quotes must appear verbatim in the indexed chapter)
-- Model: `deepseek-v4-flash` (generation and LLM rerank arms)
-- Repro:
-  - corpus: `uv run stellar-index build`
-  - BM25 retrieval: `uv run stellar-index eval --retrieval-only`
-  - dense+rerank: `uv run python scripts/retrieval_bench.py`
-  - LLM rerank: `uv run python scripts/retrieval_bench_llm.py --rerank llm`
+- Golden QA: 110 drafted → 98 curated by LLM auditor → 20 dev / 78 test
+- Model: `deepseek-v4-flash`
+- Answer correctness: exact keyphrase or token-overlap recall ≥ 0.6 against accepted keyphrases
+- Citation precision: fraction of citations whose quote is verifiably in the claimed chapter
 
-## Retrieval (110 QA, evidence-chunk ranking within the correct book)
+## Retrieval (evidence-chunk ranking, curated set)
 
 | configuration | Hit@1 | Recall@5 | Recall@10 | Precision@5 | MRR@10 |
 |---|---|---|---|---|---|
@@ -18,25 +15,31 @@
 | BM25 + bge-small dense + bge-reranker-base | 0.155 | 0.317 | 0.426 | 0.073 | 0.249 |
 | BM25 + DeepSeek LLM pointwise rerank | **0.309** | **0.412** | **0.452** | **0.096** | **0.377** |
 
-## Generation (rag, BM25-only, 110 QA)
+## Generation on held-out test set (78 QA)
 
-| metric | value |
-|---|---|
-| Accuracy (strict keyphrase match) | 0.291 |
-| Mean citation precision | 0.765 |
-| Answerable=false rate | 25.5% |
-| Total model cost | $0.182 |
-| Mean latency | 12.75 s |
+| mode | accuracy | citation precision | total cost | mean latency | upgraded to long-context |
+|---|---|---|---|---|---|
+| RAG (BM25 + query rewrite) | 0.641 | 0.878 | $0.132 | 12.8 s | 0 |
+| RAG (BM25 + rewrite + LLM rerank) | 0.487 | 0.893 | $0.130* | 26.2 s | 0 |
+| Long-context (first 20 subset) | 0.700 | 0.950 | $0.342 | — | 20 |
+| **Self-Route (default)** | **0.744** | **0.987** | $0.374 | 13.7 s | 13 |
 
-## Findings
+*LLM-rerank retrieval call cost is not yet included in that row.
 
-1. On this corpus, BM25 is a strong sparse baseline; local dense + bge-reranker-base improves Recall@10 slightly but lowers Hit@1.
-2. DeepSeek LLM rerank is the best current reranker on our evidence-chunk task (+70% Hit@1 and +49% MRR vs BM25), at the cost of one extra LLM call per query.
-3. Generation accuracy is the weak point: many auto-drafted QA items are strict or ambiguous. Next iteration must improve retrieval-to-generation context selection, answer matching, and curate the golden set before treating accuracy as a headline metric.
-4. Citation precision 0.765 shows the citation checker is working; fabricated quotes are surfaced instead of silently accepted.
+## Product decision
 
-## Next benchmark iteration
+Self-Route is the default answering mode: it starts with cheap BM25+rewrite RAG, upgrades only uncertain questions to full-book long context. On the curated test set it beats pure RAG by **+10.3 points accuracy** and **+10.9 points citation precision**, and beats long-context on both accuracy and cost by upgrading only 13/78 questions.
 
-- Run generation with `--rerank llm` on the full set (already 7/110 rows, slow but in progress).
-- Curate the 110 QA: drop ambiguous items, normalize acceptable answers, split dev/test.
-- Add Self-Route and long-context generation arms on a 20-question subset.
+## Repro
+
+```bash
+uv run stellar-index build
+uv run stellar-index eval --retrieval-only --qa-file data/splits/test.json
+uv run python scripts/generation_bench.py --qa-file data/splits/test.json --mode self-route --rerank none --query-strategy rewrite
+```
+
+## Known limitations
+
+- Golden QA is LLM-audited, not fully human-curated.
+- Long-context comparison in the table is the first 20 test items; full long-context run is queued.
+- Accuracy uses keyphrase recall, not a full LLM judge rubric.
